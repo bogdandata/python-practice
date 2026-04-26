@@ -1,2 +1,2 @@
 # python-practice
-CS50P exercises and python practice
+CS50P  problem set exercises 
