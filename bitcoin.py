@@ -1,7 +1,7 @@
 import requests
 import sys
 
-API_KEY = "0280dcd144ffef501b33f9c0afd141271844434c3f56fdccf70a4f99199cb63b"
+API_KEY = "your_api_key_here"
 
 def main():
     if len(sys.argv) != 2:
