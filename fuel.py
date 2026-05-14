@@ -23,4 +23,5 @@ def main():
     else:
         print(f"{round(percentage)}%")
 
-main()
+if __name__ == "__main__":
+    main()
