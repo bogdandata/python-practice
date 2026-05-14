@@ -18,8 +18,9 @@ def is_valid(s):
         if s[i].isdigit():
             if s[i] == "0":
                 return False
-            break
-            return True
+            else:
+                break
+    return True
 
 if __name__ == "__main__":
     main()
