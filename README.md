@@ -14,7 +14,7 @@ Rather than just following tutorials, these files represent hands-on problem set
 
 ## Highlights
 Here are a few specific projects in this repo that I enjoyed building:
-* **`bitcoin.py`**: A program that queries the CoinDesk API to get the current live price of Bitcoin and calculates the cost of a user-specified number of coins.
+* **`bitcoin.py`**: A program that queries the Coincap v3 API to get the current live price of Bitcoin and calculates the cost of a user-specified number of coins.
 * **`professor.py`**: A custom math-quiz application that generates random addition problems, tracks the user's score, and handles invalid inputs gracefully.
 * **`figlet.py`**: A fun script that takes user text and converts it into large ASCII art using external Python libraries.
 
