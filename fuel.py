@@ -2,26 +2,30 @@ def main():
     while True:
         try:
             fraction = input("Fraction: ")
-            x, y = fraction.split("/")
-            x = int(x)
-            y = int(y)
-            if y == 0:
-                continue
-            if x > y:
-                continue
-
+            percentage = convert(fraction)
+            print(gauge(percentage))
             break
         except (ValueError, ZeroDivisionError):
             pass
-        except NameError:
-            pass
-    percentage = x / y * 100
-    if percentage < 2:
-        print("E")
-    elif percentage > 99:
-        print("F")
-    else:
-        print(f"{round(percentage)}%")
+def convert(fraction):
+    x, y = fraction.split("/")
+    x = int(x)
+    y = int(y)
+    if y == 0:
+        raise ZeroDivisionError("y cannot be zero") 
+    if x > y:
+        raise ValueError("x cannot be greater than y")
+    percentage = (x / y) * 100
+    return round(percentage)
 
+def gauge(percentage):
+    if percentage <= 1:
+        return "E"
+    elif percentage >= 99:
+        return "F"
+    else:
+        return f"{round(percentage)}%"
+    
 if __name__ == "__main__":
     main()
+
